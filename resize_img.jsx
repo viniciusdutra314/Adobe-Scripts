@@ -4,7 +4,7 @@ var img_nome=img_path.name.split(".")[0]
 //criando composição
 var compWidth = 1920;  var compHeight = 1080;
 var compDuration = 5; var compFrameRate = 30; 
-var compName = img_nome+"_resize"
+var compName = "resize_"+img_nome
 var myComp = app.project.items.addComp(compName, compWidth, compHeight, 1.0, compDuration, compFrameRate);
 var img = app.project.importFile(new ImportOptions(File(img_path)))
 var BgImg = myComp.layers.add(img)
